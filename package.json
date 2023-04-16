@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint --dir src",
     "format": "next lint --fix --dir src",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "set NODE_OPTIONS=--openssl-legacy-provider && start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
   "dependencies": {
@@ -19,6 +19,7 @@
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hook-form": "^7.43.8",
     "styled-components": "^5.3.9",
     "typescript": "5.0.2"
   },
